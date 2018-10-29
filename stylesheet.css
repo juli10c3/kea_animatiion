@@ -1,31 +1,272 @@
 body {
     margin: 0;
     background: black;
+    /*
     overflow-x: hidden;
     overflow-y: hidden;
+*/
 }
 
 #start {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: red;
+    /*    background image */
+    width: 100vw;
+    height: 56.25vw;
+    z-index: 6;
+
+}
+
+.hide {
     display: none;
 }
 
-#settings {
+.fade_in {
+    animation-name: fade_in_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes fade_in_kf {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+#heart {
+    background-image: url("produktion/energy.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 4vw;
+    height: 4.6vw;
+    z-index: 2;
+    position: absolute;
+    top: 0.5vw;
+    right: 26.3vw;
     display: none;
 }
 
-#gameover {
+#heart2 {
+    background-image: url("produktion/energy.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 4vw;
+    height: 4.6vw;
+    z-index: 2;
+    position: absolute;
+    top: 0.5vw;
+    right: 31vw;
+    display: none;
+}
+
+#heart3 {
+    background-image: url("produktion/energy.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 4vw;
+    height: 4.6vw;
+    z-index: 2;
+    position: absolute;
+    top: 0.5vw;
+    right: 21.5vw;
     display: none;
 }
 
 #levelcomplete {
+    background-image: url("produktion/levelcompleted.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 39vw;
+    height: 28vw;
+    z-index: 2;
+    position: absolute;
+    top: 30vw;
+    right: 8vw;
+    display: none;
+}
+
+#close {
+    background-image: url("produktion/close.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 10vw;
+    height: 8vw;
+    z-index: 2;
+    position: absolute;
+    top: 57.5vw;
+    right: 30vw;
+    display: none;
+}
+
+#playagain {
+    background-image: url("produktion/playagain.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 14vw;
+    height: 8vw;
+    z-index: 2;
+    position: absolute;
+    top: 57.5vw;
+    right: 17vw;
+    display: none;
+}
+
+#gameover {
+    background-image: url("produktion/gameover.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 40vw;
+    height: 30vw;
+    z-index: 2;
+    position: absolute;
+    top: 30vw;
+    right: 8vw;
+    display: none;
+}
+
+#close2 {
+    background-image: url("produktion/close.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 10vw;
+    height: 8vw;
+    z-index: 2;
+    position: absolute;
+    top: 58.7vw;
+    right: 30vw;
+    display: none;
+}
+
+#playagain2 {
+    background-image: url("produktion/playagain.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 14vw;
+    height: 8vw;
+    z-index: 2;
+    position: absolute;
+    top: 58.7vw;
+    right: 17vw;
+    display: none;
+}
+
+#setting_knap {
+    background-image: url("produktion/settings.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 4vw;
+    height: 4vw;
+    z-index: 2;
+    position: absolute;
+    top: 0.5vw;
+    right: 52vw;
+    display: none;
+}
+
+#settings {
+    background-image: url("produktion/settingsmenu.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 40vw;
+    height: 30vw;
+    z-index: 1;
+    position: absolute;
+    top: 30vw;
+    right: 8vw;
+    display: none;
+}
+
+#checkmark {
+    background-image: url("produktion/checkmark.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 4.5vw;
+    height: 4vw;
+    z-index: 1;
+    position: absolute;
+    top: 50.5vw;
+    right: 14.9vw;
+    display: none;
+}
+
+#checkmark2 {
+    background-image: url("produktion/checkmark.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 4.5vw;
+    height: 4vw;
+    z-index: 1;
+    position: absolute;
+    top: 45.2vw;
+    right: 14.9vw;
+    display: none;
+}
+
+#checkmark3 {
+    background-image: url("produktion/checkmark.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 4.5vw;
+    height: 4vw;
+    z-index: 1;
+    position: absolute;
+    top: 40vw;
+    right: 14.9vw;
     display: none;
 }
 
 
+#close3 {
+    background-image: url("produktion/close.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 10vw;
+    height: 8vw;
+    z-index: 2;
+    position: absolute;
+    top: 59vw;
+    right: 30vw;
+    display: none;
+}
+
+#playagain3 {
+    background-image: url("produktion/playagain.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 14vw;
+    height: 8vw;
+    z-index: 2;
+    position: absolute;
+    top: 59vw;
+    right: 17vw;
+    display: none;
+}
+
+
+/*
+#menu_background {
+
+    background-image: url("produktion/start.svg");
+    background-size: 100%;
+    width: 56.25vw;
+    height: 100vw;
+    z-index: 1;
+    position: relative;
+    display: none;
+
+}
+*/
 
 #screen {
     background-size: cover;
-     width: 56.25vw;
+    width: 56.25vw;
     height: 100vw;
     position: relative;
     z-index: 0;
@@ -39,6 +280,7 @@ body {
     z-index: 0;
 }
 
+
 #game_background {
 
     background-image: url("produktion/baggrund.svg");
@@ -50,13 +292,14 @@ body {
 
 }
 
+
 #pasta_princess {
     background-image: url("produktion/pastaprincess.svg");
     background-size: 100%;
     margin: auto;
     z-index: 2;
     position: absolute;
-    overflow: hidden;
+    display: none;
 }
 
 #butler {
@@ -65,7 +308,7 @@ body {
     margin: auto;
     z-index: 1;
     position: absolute;
-    overflow: hidden;
+    display: none;
 }
 
 #meatball {
@@ -76,79 +319,560 @@ body {
     height: 15vw;
     z-index: 2;
     position: absolute;
-    top: 2vw;
+    top: -20vw;
     right: 10vw;
+}
+
+.meatball_fall {
+    animation-name: meatball_kf;
+    animation-duration: 4s;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    transform-origin: center;
+    animation-timing-function: linear;
+
+}
+
+@keyframes meatball_kf {
+    0% {
+        transform: translateY(0vw);
+    }
+
+    100% {
+        transform: translateY(110vw);
+    }
+}
+
+#meatball2 {
+    background-image: url("produktion/meatball.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 15vw;
+    height: 15vw;
+    z-index: 2;
+    position: absolute;
+    top: -20vw;
+    right: 30vw;
+}
+
+.meatball_fall2 {
+    animation-name: meatball2_kf;
+    animation-duration: 4s;
+    animation-delay: 10s;
+    animation-iteration-count: 2;
+    transform-origin: center;
+    animation-timing-function: linear;
+
+}
+
+@keyframes meatball2_kf {
+    0% {
+        transform: translateY(0vw);
+    }
+
+    100% {
+        transform: translateY(110vw);
+    }
+}
+
+#meatball3 {
+    background-image: url("produktion/meatball.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 15vw;
+    height: 15vw;
+    z-index: 2;
+    position: absolute;
+    top: -20vw;
+    right: 20vw;
+}
+
+.meatball_fall3 {
+    animation-name: meatball3_kf;
+    animation-duration: 4s;
+    animation-delay: 15s;
+    animation-iteration-count: 2;
+    transform-origin: center;
+    animation-timing-function: linear;
+
+}
+
+@keyframes meatball3_kf {
+    0% {
+        transform: translateY(0vw);
+    }
+
+    100% {
+        transform: translateY(110vw);
+    }
+}
+#meatball4 {
+    background-image: url("produktion/meatball.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 15vw;
+    height: 15vw;
+    z-index: 2;
+    position: absolute;
+    top: -20vw;
+    right: 10vw;
+}
+
+.meatball_fall4 {
+    animation-name: meatball4_kf;
+    animation-duration: 4s;
+    animation-delay: 13s;
+    animation-iteration-count: 2;
+    transform-origin: center;
+    animation-timing-function: linear;
+
+}
+
+@keyframes meatball4_kf {
+    0% {
+        transform: translateY(0vw);
+    }
+
+    100% {
+        transform: translateY(110vw);
+    }
+}
+#meatball5 {
+    background-image: url("produktion/meatball.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 15vw;
+    height: 15vw;
+    z-index: 2;
+    position: absolute;
+    top: -20vw;
+    right: 40vw;
+}
+
+.meatball_fall5 {
+    animation-name: meatball5_kf;
+    animation-duration: 4s;
+    animation-delay: 8s;
+    animation-iteration-count: 2;
+    transform-origin: center;
+    animation-timing-function: linear;
+
+}
+
+@keyframes meatball5_kf {
+    0% {
+        transform: translateY(0vw);
+    }
+
+    100% {
+        transform: translateY(110vw);
+    }
+}
+#meatball6 {
+    background-image: url("produktion/meatball.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 15vw;
+    height: 15vw;
+    z-index: 2;
+    position: absolute;
+    top: -20vw;
+    right: 5vw;
+}
+
+.meatball_fall6 {
+    animation-name: meatball6_kf;
+    animation-duration: 4s;
+    animation-delay: 21s;
+    animation-iteration-count: 2;
+    transform-origin: center;
+    animation-timing-function: linear;
+
+}
+
+@keyframes meatball6_kf {
+    0% {
+        transform: translateY(0vw);
+    }
+
+    100% {
+        transform: translateY(110vw);
+    }
 }
 #pasta {
     background-image: url("produktion/pasta.svg");
     background-repeat: no-repeat;
-    background-size: 70%;
-    width: 12vw;
+    background-size: 100%;
+    width: 8.5vw;
     height: 19vw;
     z-index: 2;
     position: absolute;
-    top: 50vw;
+    top: -20vw;
     right: 25vw;
+}
+
+.pasta_fall {
+    animation-name: pasta_kf;
+    animation-duration: 4s;
+    animation-delay: 5s;
+    animation-iteration-count: 1;
+    transform-origin: center;
+    animation-timing-function: linear;
+
+}
+
+@keyframes pasta_kf {
+    0% {
+        transform: translateY(0vw);
+    }
+
+    100% {
+        transform: translateY(110vw);
+    }
+}
+
+#pasta2 {
+    background-image: url("produktion/pasta.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 8.5vw;
+    height: 19vw;
+    z-index: 2;
+    position: absolute;
+    top: -20vw;
+    right: 45vw;
+}
+
+.pasta_fall2 {
+    animation-name: pasta2_kf;
+    animation-duration: 3s;
+    animation-delay: 11s;
+    animation-iteration-count: 2;
+    transform-origin: center;
+    animation-timing-function: linear;
+
+}
+
+@keyframes pasta2_kf {
+    0% {
+        transform: translateY(0vw);
+    }
+
+    100% {
+        transform: translateY(110vw);
+    }
+}
+
+#pasta3 {
+    background-image: url("produktion/pasta.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 8.5vw;
+    height: 19vw;
+    z-index: 2;
+    position: absolute;
+    top: -20vw;
+    right: 10vw;
+}
+
+.pasta_fall3 {
+    animation-name: pasta3_kf;
+    animation-duration: 5s;
+    animation-delay: 12s;
+    animation-iteration-count: 2;
+    transform-origin: center;
+    animation-timing-function: linear;
+
+}
+
+@keyframes pasta3_kf {
+    0% {
+        transform: translateY(0vw);
+    }
+
+    100% {
+        transform: translateY(110vw);
+    }
+}
+#pasta4 {
+    background-image: url("produktion/pasta.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 8.5vw;
+    height: 19vw;
+    z-index: 2;
+    position: absolute;
+    top: -20vw;
+    right: 35vw;
+}
+
+.pasta_fall4 {
+    animation-name: pasta4_kf;
+    animation-duration: 5s;
+    animation-delay: 18s;
+    animation-iteration-count: 2;
+    transform-origin: center;
+    animation-timing-function: linear;
+
+}
+
+@keyframes pasta4_kf {
+    0% {
+        transform: translateY(0vw);
+    }
+
+    100% {
+        transform: translateY(110vw);
+    }
+}
+
+#pasta5 {
+    background-image: url("produktion/pasta.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 8.5vw;
+    height: 19vw;
+    z-index: 2;
+    position: absolute;
+    top: -20vw;
+    right: 10vw;
+}
+
+.pasta_fall5 {
+    animation-name: pasta5_kf;
+    animation-duration: 4s;
+    animation-delay: 32s;
+    animation-iteration-count: 1;
+    transform-origin: center;
+    animation-timing-function: linear;
+
+}
+
+@keyframes pasta5_kf {
+    0% {
+        transform: translateY(0vw);
+    }
+
+    100% {
+        transform: translateY(110vw);
+    }
 }
 
 #knife {
     background-image: url("produktion/knife.svg");
-     background-repeat: no-repeat;
-    background-size: 55%;
-    width: 12vw;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 6.5vw;
     height: 22vw;
     z-index: 2;
     position: absolute;
-    top: 70vw;
+    top: -25vw;
     right: 6vw;
+}
+.knife_fall {
+    animation-name: knife_kf;
+    animation-duration: 3s;
+    animation-delay: 7s;
+    animation-iteration-count: 1;
+    transform-origin: center;
+    animation-timing-function: linear;
+
+}
+
+@keyframes knife_kf {
+    0% {
+        transform: translateY(0vw);
+    }
+
+    100% {
+        transform: translateY(110vw);
+    }
+}
+
+#knife2 {
+    background-image: url("produktion/knife.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 6.5vw;
+    height: 22vw;
+    z-index: 2;
+    position: absolute;
+    top: -25vw;
+    right: 26vw;
+}
+.knife_fall2 {
+    animation-name: knife2_kf;
+    animation-duration: 4s;
+    animation-delay: 10s;
+    animation-iteration-count: 2;
+    transform-origin: center;
+    animation-timing-function: linear;
+
+}
+
+@keyframes knife2_kf {
+    0% {
+        transform: translateY(0vw);
+    }
+
+    100% {
+        transform: translateY(110vw);
+    }
+}
+#knife3 {
+    background-image: url("produktion/knife.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 6.5vw;
+    height: 22vw;
+    z-index: 2;
+    position: absolute;
+    top: -25vw;
+    right: 36vw;
+}
+.knife_fall3 {
+    animation-name: knife3_kf;
+    animation-duration: 4s;
+    animation-delay: 29s;
+    animation-iteration-count: 2;
+    transform-origin: center;
+    animation-timing-function: linear;
+
+}
+
+@keyframes knife3_kf {
+    0% {
+        transform: translateY(0vw);
+    }
+
+    100% {
+        transform: translateY(110vw);
+    }
+}
+#knife4 {
+    background-image: url("produktion/knife.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 6.5vw;
+    height: 22vw;
+    z-index: 2;
+    position: absolute;
+    top: -25vw;
+    right: 16vw;
+}
+.knife_fall4 {
+    animation-name: knife4_kf;
+    animation-duration: 3s;
+    animation-delay: 23s;
+    animation-iteration-count: 2;
+    transform-origin: center;
+    animation-timing-function: linear;
+
+}
+
+@keyframes knife4_kf {
+    0% {
+        transform: translateY(0vw);
+    }
+
+    100% {
+        transform: translateY(110vw);
+    }
 }
 
 #fork {
     background-image: url("produktion/fork.svg");
-      background-repeat: no-repeat;
-    background-size: 55%;
-    width: 12vw;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 6.5vw;
     height: 22vw;
     z-index: 2;
     position: absolute;
-    top: 20vw;
+    top: -25vw;
     right: 36vw;
 }
 
+.fork_fall {
+    animation-name: fork_kf;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    transform-origin: center;
+    animation-timing-function: linear;
 
-/*
-#bil {
-    background-image: url("bil.svg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 14vw;
-    height: 100%;
-    z-index: 4;
-    position: absolute;
-    top: 31vw;
-    right: 39vw;
 }
 
-#bom {
-    background-image: url("bom.svg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 35vw;
-    height: 100%;
-    z-index: 3;
-    position: absolute;
-    top: 32vw;
-    right: 35vw;
+@keyframes fork_kf {
+    0% {
+        transform: translateY(0vw);
+    }
+
+    100% {
+        transform: translateY(110vw);
+    }
 }
 
-#forgrund {
-    background-image: url("forgrund-01.svg");
+#fork2 {
+    background-image: url("produktion/fork.svg");
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 100vw;
-    height: 56.25vw;
-    z-index: 5;
+    width: 6.5vw;
+    height: 22vw;
+    z-index: 2;
     position: absolute;
-    top: 0vw;
-    right: 0vw;
-*/
+    top: -25vw;
+    right: 16vw;
+}
+
+.fork_fall2 {
+    animation-name: fork2_kf;
+    animation-duration: 4s;
+    animation-delay: 7s;
+    animation-iteration-count: 2;
+    transform-origin: center;
+    animation-timing-function: linear;
+
+}
+
+@keyframes fork2_kf {
+    0% {
+        transform: translateY(0vw);
+    }
+
+    100% {
+        transform: translateY(110vw);
+    }
+}
+
+#fork3 {
+    background-image: url("produktion/fork.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 6.5vw;
+    height: 22vw;
+    z-index: 2;
+    position: absolute;
+    top: -25vw;
+    right: 20vw;
+}
+
+.fork_fall3 {
+    animation-name: fork3_kf;
+    animation-duration: 4s;
+    animation-delay: 20s;
+    animation-iteration-count: 2;
+    transform-origin: center;
+    animation-timing-function: linear;
+
+}
+
+@keyframes fork3_kf {
+    0% {
+        transform: translateY(0vw);
+    }
+
+    100% {
+        transform: translateY(110vw);
+    }
+}
+
