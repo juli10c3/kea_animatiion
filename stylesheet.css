@@ -272,16 +272,15 @@ body {
     right: 8vw;
 }
 
-#checkmark {
+#checkmark1 {
     background-image: url("produktion/checkmark.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 4.5vw;
     height: 4vw;
     position: absolute;
-    top: 50.5vw;
-    right: 14.9vw;
-    display: none;
+    top: 10.1vw;
+    right: 7vw;
 }
 
 #checkmark2 {
@@ -291,9 +290,8 @@ body {
     width: 4.5vw;
     height: 4vw;
     position: absolute;
-    top: 45.2vw;
-    right: 14.9vw;
-    display: none;
+    top: 15.3vw;
+    right: 7vw;
 }
 
 #checkmark3 {
@@ -305,7 +303,6 @@ body {
     position: absolute;
     top: 20.7vw;
     right: 7vw;
-    display:
 }
 
 
@@ -316,23 +313,9 @@ body {
     width: 10vw;
     height: 8vw;
     position: absolute;
-    top: 59vw;
-    right: 30vw;
-    display: non;
+    top: 29.3vw;
+    right: 15vw;
 }
-
-#playagain3 {
-    background-image: url("produktion/playagain.svg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 14vw;
-    height: 8vw;
-    position: absolute;
-    top: 59vw;
-    right: 17vw;
-    display: noe;
-}
-
 
 
 
@@ -362,9 +345,6 @@ body {
     position: absolute;
     top: -20vw;
     right: 10vw;
-}
-
-.meatball_fall {
     animation-name: meatball_kf;
     animation-duration: 4s;
     animation-delay: 3s;
@@ -393,9 +373,7 @@ body {
     position: absolute;
     top: -20vw;
     right: 30vw;
-}
 
-.meatball_fall2 {
     animation-name: meatball2_kf;
     animation-duration: 4s;
     animation-delay: 10s;
@@ -424,9 +402,6 @@ body {
     position: absolute;
     top: -20vw;
     right: 20vw;
-}
-
-.meatball_fall3 {
     animation-name: meatball3_kf;
     animation-duration: 4s;
     animation-delay: 15s;
@@ -455,9 +430,7 @@ body {
     position: absolute;
     top: -20vw;
     right: 10vw;
-}
 
-.meatball_fall4 {
     animation-name: meatball4_kf;
     animation-duration: 4s;
     animation-delay: 13s;
@@ -486,9 +459,7 @@ body {
     position: absolute;
     top: -20vw;
     right: 40vw;
-}
 
-.meatball_fall5 {
     animation-name: meatball5_kf;
     animation-duration: 4s;
     animation-delay: 8s;
@@ -517,9 +488,7 @@ body {
     position: absolute;
     top: -20vw;
     right: 5vw;
-}
 
-.meatball_fall6 {
     animation-name: meatball6_kf;
     animation-duration: 4s;
     animation-delay: 21s;
@@ -548,9 +517,6 @@ body {
     position: absolute;
     top: -20vw;
     right: 25vw;
-}
-
-.pasta_fall {
     animation-name: pasta_kf;
     animation-duration: 4s;
     animation-delay: 5s;
@@ -579,9 +545,7 @@ body {
     position: absolute;
     top: -20vw;
     right: 45vw;
-}
 
-.pasta_fall2 {
     animation-name: pasta2_kf;
     animation-duration: 3s;
     animation-delay: 11s;
@@ -610,9 +574,7 @@ body {
     position: absolute;
     top: -20vw;
     right: 10vw;
-}
 
-.pasta_fall3 {
     animation-name: pasta3_kf;
     animation-duration: 5s;
     animation-delay: 12s;
@@ -641,9 +603,6 @@ body {
     position: absolute;
     top: -20vw;
     right: 35vw;
-}
-
-.pasta_fall4 {
     animation-name: pasta4_kf;
     animation-duration: 5s;
     animation-delay: 18s;
@@ -672,9 +631,7 @@ body {
     position: absolute;
     top: -20vw;
     right: 10vw;
-}
 
-.pasta_fall5 {
     animation-name: pasta5_kf;
     animation-duration: 4s;
     animation-delay: 32s;
@@ -703,9 +660,7 @@ body {
     position: absolute;
     top: -25vw;
     right: 6vw;
-}
 
-.knife_fall {
     animation-name: knife_kf;
     animation-duration: 3s;
     animation-delay: 7s;
@@ -734,9 +689,6 @@ body {
     position: absolute;
     top: -25vw;
     right: 26vw;
-}
-
-.knife_fall2 {
     animation-name: knife2_kf;
     animation-duration: 4s;
     animation-delay: 10s;
@@ -765,9 +717,6 @@ body {
     position: absolute;
     top: -25vw;
     right: 36vw;
-}
-
-.knife_fall3 {
     animation-name: knife3_kf;
     animation-duration: 4s;
     animation-delay: 29s;
@@ -796,9 +745,6 @@ body {
     position: absolute;
     top: -25vw;
     right: 16vw;
-}
-
-.knife_fall4 {
     animation-name: knife4_kf;
     animation-duration: 3s;
     animation-delay: 23s;
@@ -827,9 +773,6 @@ body {
     position: absolute;
     top: -25vw;
     right: 36vw;
-}
-
-.fork_fall {
     animation-name: fork_kf;
     animation-duration: 5s;
     animation-delay: 1s;
@@ -858,9 +801,6 @@ body {
     position: absolute;
     top: -25vw;
     right: 16vw;
-}
-
-.fork_fall2 {
     animation-name: fork2_kf;
     animation-duration: 4s;
     animation-delay: 7s;
@@ -889,9 +829,6 @@ body {
     position: absolute;
     top: -25vw;
     right: 20vw;
-}
-
-.fork_fall3 {
     animation-name: fork3_kf;
     animation-duration: 4s;
     animation-delay: 20s;
@@ -909,4 +846,11 @@ body {
     100% {
         transform: translateY(110vw);
     }
+}
+
+
+#points {
+    position: absolute;
+    right: 10vw;
+    top: 95.5vw;
 }
