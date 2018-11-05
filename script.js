@@ -1,4 +1,7 @@
 let points = 0;
+let timeLeft = 30;
+let life = 3;
+
 window.addEventListener("load", sidenVises);
 
 //function skal altid være med parantes bagved
@@ -41,7 +44,7 @@ function hideCheckmark1() {
 
 function showCheckmark1() {
     console.log("show checkmark1");
-    document.querySelector("#checkmark1").classList.remove("hide");
+
 }
 
 
@@ -55,7 +58,7 @@ function hideCheckmark2() {
 
 function showCheckmark2() {
     console.log("show checkmark2");
-    document.querySelector("#checkmark2").classList.remove("hide");
+
 }
 
 function hideCheckmark3() {
@@ -68,13 +71,14 @@ function hideCheckmark3() {
 
 function showCheckmark3() {
     console.log("show checkmark3");
-    document.querySelector("#checkmark3").classList.remove("hide");
+
 }
 
 //
 //function showCheckmark1() {
 //    console.log("show checkmark1");
 //    document.querySelector("#checkmark1").classList.remove("hide");
+// document.querySelector("#play").classList.toggle("hide");
 //}
 
 function hideStart() {
@@ -109,7 +113,7 @@ function startGame() {
     document.querySelector("#fork").addEventListener("click", clickCutlery);
     document.querySelector("#fork2").addEventListener("click", clickCutlery);
     document.querySelector("#fork3").addEventListener("click", clickCutlery);
-
+    timeLeftFc();
 }
 
 
@@ -121,17 +125,54 @@ function clickFood() {
     document.querySelector("#points").innerHTML = points;
     console.log(this);
     this.classList.add("hide");
-    this.removeEventListener("click", clickFood);
+    this.removeEventListener("click", clickFood)
+
+    //
+    //        this.addEventListener("animationend", nySvamp);
+    //        gameStatus();
 }
 
 function clickCutlery() {
     console.log("bestik klikket");
 
-    points--;
-    console.log(points);
-    document.querySelector("#points").innerHTML = points;
+    life--;
+    console.log("life");
+    document.querySelector("#heart" + (life + 1)).classList.add("hide");
 
-    console.log(this);
-    this.classList.add("hide");
-    this.removeEventListener("click", clickCutlery);
+    this.addEventListener("animationend", timeLeftFc);
+    gameStatus();
+}
+
+function timeLeftFc() {
+    console.log("timeleftFc timeleft er" + timeLeft);
+    //se øverst for hvad den tæller ned fra
+
+    if (timeLeft > 0) {
+        console.log("timeleft");
+        timeLeft--;
+        setTimeout(timeLeftFc, 1000);
+
+    } else {
+
+        gameStatus();
+        //^Kalder på gameover funktionen
+    }
+}
+
+function gameStatus() {
+    console.log("gameStatus");
+    console.log(life);
+    if (life == 0) {
+        document.querySelector("#gameover").classList.remove("hide");
+    } else if (points == 10) {
+        document.querySelector("#levelcomplete").classList.remove("hide");
+    }
+}
+
+function gameOver() {
+
+}
+
+function levelComplete() {
+
 }

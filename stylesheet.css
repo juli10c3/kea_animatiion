@@ -140,6 +140,7 @@ body {
 
 }
 
+/*
 #heart {
     background-image: url("produktion/energy.svg");
     background-repeat: no-repeat;
@@ -175,6 +176,7 @@ body {
     right: 21.5vw;
     display: none;
 }
+*/
 
 #levelcomplete {
     background-image: url("produktion/levelcompleted.svg");
@@ -853,4 +855,43 @@ body {
     position: absolute;
     right: 10vw;
     top: 95.5vw;
+}
+
+#energy {
+    position: absolute;
+    top: 0.5vw;
+    left: 19vw;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.heart {
+    width: 5vw;
+    height: 6vw;
+    background-image: url(produktion/energy.svg);
+    background-size: 100%;
+    margin-right: 0.9vw;
+}
+
+#gameover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 56.25vw;
+    background-image: url(produktion/gameover.svg);
+    background-size: 100%;
+    pointer-events: none;
+}
+
+#levelcomplete {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 56.25vw;
+    background-image: url(produktion/levelcompleted.svg);
+    background-size: 100%;
+    pointer-events: none;
 }
