@@ -1,6 +1,8 @@
 let points = 0;
 let timeLeft = 30;
 let life = 3;
+let showSettingsEffektSound = true;
+let showSettingsMusic = true;
 
 window.addEventListener("load", sidenVises);
 
@@ -9,6 +11,7 @@ function sidenVises() {
     //for at holde styr på det
     console.log("siden vises");
     //Hvad der skal ske
+    document.querySelector("#settings").addEventListener("click", showSettings);
     showStart();
 }
 
@@ -17,62 +20,114 @@ function showStart() {
     document.querySelector("#start").classList.remove("hide");
     document.querySelector("#play").classList.add("pulse");
     document.querySelector("#play").addEventListener("click", hideStart);
-    document.querySelector("#setting_knap").addEventListener("click", showSettings);
+    //    document.querySelector("#setting_knap").addEventListener("click", showSettings);
 
 
 }
 
 function showSettings() {
     console.log("show settings");
-    document.querySelector("#settings").classList.remove("hide");
-    document.querySelector("#setting_knap").removeEventListener("click", showSettings);
-    document.querySelector("#checkmark1").addEventListener("click", hideCheckmark1);
-    document.querySelector("#checkmark2").addEventListener("click", hideCheckmark2);
-    document.querySelector("#checkmark3").addEventListener("click", hideCheckmark3);
-    document.querySelector("#checkmark1").addEventListener("click", showCheckmark1);
-    document.querySelector("#checkmark2").addEventListener("click", showCheckmark2);
-    document.querySelector("#checkmark3").addEventListener("click", showCheckmark3);
-}
-
-function hideCheckmark1() {
-    console.log("hide checkmark1");
-    document.querySelector("#checkmark1").classList.add("hide");
-    //hide ved click
-
+    document.querySelector("#settings_screen").classList.remove("hide");
+    document.querySelector("#setting_close").addEventListener("click", hideSettings);
+    document.querySelector("#sfx").addEventListener("click", toggleSounds);
+    document.querySelector("#music").addEventListener("click", toggleMusic);
+    //    document.querySelector("#sfx").addEventListener("click", toggleSounds);
+    //    document.querySelector("#music").addEventListener("click", toggleMusic);
 
 }
 
-function showCheckmark1() {
-    console.log("show checkmark1");
+function hideSettings() {
+    console.log("hideSettings");
+    document.querySelector("#settings_screen").classList.add("hide");
+}
+
+function toggleSounds() {
+    console.log("toggleSounds");
+    if (showSettingsEffektSound == false) {
+        console.log("true");
+        showSettingsEffektSound = true;
+        soundsOn();
+    } else {
+        console.log("false");
+        showSettingsEffektSound = false;
+        soundsOff();
+        //        this.addEventListener("click", soundsOff);
+    }
+}
+
+function soundsOff() {
+    console.log("soundsOff");
+    document.querySelector("#sfx").classList.remove("on");
 
 }
 
-
-function hideCheckmark2() {
-    console.log("hide checkmark2");
-    document.querySelector("#checkmark2").classList.add("hide");
-
-    //hide ved click
-
+function soundsOn() {
+    console.log("soundsOn");
+    document.querySelector("#sfx").classList.add("off");
 }
 
-function showCheckmark2() {
-    console.log("show checkmark2");
-
+function toggleMusic() {
+    console.log("toggleMusic");
+    if (showSettingsMusic == true) {
+        console.log("true");
+        showSettingsMusic = false;
+        musicOn();
+    } else {
+        console.log("false");
+        showSettingsMusic = true;
+        musicOff();
+    }
 }
 
-function hideCheckmark3() {
-    console.log("hide checkmark3");
-    document.querySelector("#checkmark3").classList.add("hide");
-
-    //hide ved click
-
+function musicOff() {
+    console.log("musicOff");
+    document.querySelector("#music").classList.remove("on");
 }
 
-function showCheckmark3() {
-    console.log("show checkmark3");
-
+function musicOn() {
+    console.log("musicOn");
+    document.querySelector("#music").classList.add("off");
 }
+
+//function hideCheckmark1() {
+//    console.log("hide checkmark1");
+//    document.querySelector("#checkmark1").classList.add("hide");
+//    //hide ved click
+//
+//
+//}
+//
+//function showCheckmark1() {
+//    console.log("show checkmark1");
+//
+//}
+//
+//
+//function hideCheckmark2() {
+//    console.log("hide checkmark2");
+//    document.querySelector("#checkmark2").classList.add("hide");
+//
+//    //hide ved click
+//
+//}
+//
+//function showCheckmark2() {
+//    console.log("show checkmark2");
+//
+//}
+//
+//function hideCheckmark3() {
+//    console.log("hide checkmark3");
+//    document.querySelector("#checkmark3").classList.add("hide");
+//
+//    //hide ved click
+//
+//}
+//
+//function showCheckmark3() {
+//    console.log("show checkmark3");
+//
+//}
 
 //
 //function showCheckmark1() {

@@ -250,6 +250,7 @@ body {
     display: none;
 }
 
+/*
 #setting_knap {
     background-image: url("produktion/settings.svg");
     background-repeat: no-repeat;
@@ -317,7 +318,7 @@ body {
     position: absolute;
     top: 29.3vw;
     right: 15vw;
-}
+}*/
 
 
 
@@ -894,4 +895,85 @@ body {
     background-image: url(produktion/levelcompleted.svg);
     background-size: 100%;
     pointer-events: none;
+}
+
+#sfx,
+#music {
+    /*
+    background-size: 500% 100%;
+    width: 5vw;
+    height: 5vw;
+    display: flex;
+    flex-direction: column;
+*/
+}
+
+#sfx {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 5.7vw;
+    height: 6vw;
+    position: absolute;
+    top: 23.5vw;
+    right: 10.9vw;
+}
+
+#music {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 5.7vw;
+    height: 6vw;
+    position: absolute;
+    top: 12.5vw;
+    right: 10.9vw;
+}
+
+
+
+.on {
+
+    /*    background-color: green;*/
+    background-image: url(produktion/checkmark.svg);
+}
+
+.off {
+
+    background-image: url(produktion/checkmark_uden.svg);
+    /*    background-color: red;*/
+}
+
+#settings {
+    position: absolute;
+    left: 0.5vw;
+    top: 0.5vw;
+
+    width: 4vw;
+    height: 4vw;
+    background-image: url(produktion/settings.svg);
+    background-size: 100%;
+}
+
+#settings_screen {
+    /*    margin: 0 auto;*/
+    position: absolute;
+    width: 50vw;
+    height: 38vw;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(produktion/settingsmenu.svg);
+    top: 25vw;
+    left: 3vw;
+}
+
+#setting_close {
+    position: absolute;
+
+    left: 44.5vw;
+    top: 0.5vw;
+
+    width: 5vw;
+    height: 4vw;
+    background-repeat: no-repeat;
+    background-image: url(produktion/close.svg);
+    background-size: 100%;
 }
